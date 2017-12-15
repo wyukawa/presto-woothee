@@ -28,7 +28,7 @@ public class ParseAgentFuntion {
     @ScalarFunction("parse_agent")
     @Description("Returns Map, which has keys such as 'category', 'name', 'os', 'version', 'vendor' and 'os_version'")
     @SqlType("map<varchar,varchar>")
-    public Block parseAgent(@TypeParameter("map<varchar,varchar>") Type mapType, @SqlNullable @SqlType(StandardTypes.VARCHAR) Slice slice) {
+    public Block parseAgent(@TypeParameter("map<varchar,varchar>") Type mapType, @SqlType(StandardTypes.VARCHAR) Slice slice) {
         String argument = slice.toStringUtf8();
         Map<String, String> stringMap = Classifier.parse(argument);
 
