@@ -5,16 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <presto.version>0.173</presto.version>
-        <slice.version>0.28</slice.version>
+        <presto.version>0.205</presto.version>
+        <slice.version>0.35</slice.version>
         <guava.version>21.0</guava.version>
-        <io.airlift.log.version>0.139</io.airlift.log.version>
         <woothee-java.version>1.5.1</woothee-java.version>
     </properties>
 
     <groupId>woothee</groupId>
     <artifactId>presto-woothee</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 
     <dependencies>
         <dependency>

@@ -11,6 +11,7 @@ public class WootheePlugin implements Plugin {
 
         return ImmutableSet.<Class<?>>builder()
                 .add(ParseAgentFuntion.class)
+                .add(IsParseFuntion.class)
                 .build();
     }
 
