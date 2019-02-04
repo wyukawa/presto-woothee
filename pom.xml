@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <presto.version>0.205</presto.version>
+        <presto.version>301</presto.version>
         <slice.version>0.35</slice.version>
         <guava.version>21.0</guava.version>
         <woothee-java.version>1.5.1</woothee-java.version>
@@ -13,17 +13,17 @@
 
     <groupId>woothee</groupId>
     <artifactId>presto-woothee</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
 
     <dependencies>
         <dependency>
-            <groupId>com.facebook.presto</groupId>
+            <groupId>io.prestosql</groupId>
             <artifactId>presto-spi</artifactId>
             <version>${presto.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.facebook.presto</groupId>
+            <groupId>io.prestosql</groupId>
             <artifactId>presto-main</artifactId>
             <version>${presto.version}</version>
         </dependency>
