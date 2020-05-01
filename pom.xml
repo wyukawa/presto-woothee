@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <presto.version>301</presto.version>
-        <slice.version>0.35</slice.version>
+        <presto.version>328</presto.version>
+        <slice.version>0.36</slice.version>
         <guava.version>21.0</guava.version>
-        <woothee-java.version>1.5.1</woothee-java.version>
+        <woothee-java.version>1.11.0</woothee-java.version>
     </properties>
 
     <groupId>woothee</groupId>
     <artifactId>presto-woothee</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 
     <dependencies>
         <dependency>
