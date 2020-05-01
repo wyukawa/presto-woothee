@@ -24,12 +24,12 @@ public class ParseAgentFuntion {
 
     private final PageBuilder pageBuilder;
 
-    public ParseAgentFuntion(@TypeParameter("map<varchar,varchar>") Type mapType) {
+    public ParseAgentFuntion(@TypeParameter("map(varchar,varchar)") Type mapType) {
         pageBuilder = new PageBuilder(ImmutableList.of(mapType));
     }
 
-    @SqlType("map<varchar,varchar>")
-    public Block parseAgent(@TypeParameter("map<varchar,varchar>") Type mapType, @SqlType(StandardTypes.VARCHAR) Slice slice) {
+    @SqlType("map(varchar,varchar)")
+    public Block parseAgent(@TypeParameter("map(varchar,varchar)") Type mapType, @SqlType(StandardTypes.VARCHAR) Slice slice) {
         String argument = slice.toStringUtf8();
         Map<String, String> stringMap = Classifier.parse(argument);
 
