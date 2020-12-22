@@ -10,8 +10,8 @@ public class WootheePlugin implements Plugin {
     public Set<Class<?>> getFunctions() {
 
         return ImmutableSet.<Class<?>>builder()
-                .add(ParseAgentFuntion.class)
-                .add(IsParseFuntion.class)
+                .add(ParseAgentFunction.class)
+                .add(IsParseFunction.class)
                 .build();
     }
 

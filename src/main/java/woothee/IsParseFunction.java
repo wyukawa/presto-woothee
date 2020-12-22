@@ -10,7 +10,7 @@ import is.tagomor.woothee.Classifier;
 import is.tagomor.woothee.DataSet;
 
 
-public class IsParseFuntion {
+public class IsParseFunction {
 
     @ScalarFunction("is_pc")
     @Description("Returns Boolean: map['category'] is a pc or not.")

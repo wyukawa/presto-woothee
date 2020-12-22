@@ -20,11 +20,11 @@ import static io.prestosql.spi.type.VarcharType.VARCHAR;
 
 @ScalarFunction("parse_agent")
 @Description("Returns Map, which has keys such as 'category', 'name', 'os', 'version', 'vendor' and 'os_version'")
-public class ParseAgentFuntion {
+public class ParseAgentFunction {
 
     private final PageBuilder pageBuilder;
 
-    public ParseAgentFuntion(@TypeParameter("map(varchar,varchar)") Type mapType) {
+    public ParseAgentFunction(@TypeParameter("map(varchar,varchar)") Type mapType) {
         pageBuilder = new PageBuilder(ImmutableList.of(mapType));
     }
 
