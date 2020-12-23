@@ -9,7 +9,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <presto.version>328</presto.version>
         <slice.version>0.36</slice.version>
-        <guava.version>21.0</guava.version>
+        <guava.version>25.0-jre</guava.version>
         <woothee-java.version>1.11.0</woothee-java.version>
     </properties>
 
@@ -46,6 +46,29 @@
             <groupId>is.tagomor.woothee</groupId>
             <artifactId>woothee-java</artifactId>
             <version>${woothee-java.version}</version>
+        </dependency>
+
+        <!-- for testing -->
+        <dependency>
+            <groupId>io.prestosql</groupId>
+            <artifactId>presto-main</artifactId>
+            <version>${presto.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.airlift</groupId>
+            <artifactId>testing</artifactId>
+            <version>201</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
